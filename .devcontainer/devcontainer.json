@@ -1,0 +1,16 @@
+{
+  "name": "Drupal Dev Environment",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-azuretools.vscode-docker",
+    "drupal.8-toolbox"
+  ],
+  "forwardPorts": [8080],
+  "postCreateCommand": "composer install",
+  "remoteUser": "vscode"
+}
